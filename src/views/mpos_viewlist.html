@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>본부 매출조회</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="../resource/css/mpos.css" />
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <button><span>뒤로가기</span></button>
+        <h1>본부매출조회</h1>
+    </div>
+    <div class="container">
+        <div class="tab">
+            <ul>
+                <li>전체매출</li>
+                <li>시간대별</li>
+                <li>분류별</li>
+            </ul>
+        </div>
+        <div class="date">
+            <button>왼쪽</button>
+            <button></button>
+            <div>
+                <span></span>
+                <input type="text" id="datepicker" />
+            </div>
+            
+            <button>오른쪽</button>
+        </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <span>매장명</span>
+                    <span>객수</span>
+                    <span>매출액</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <table>
+            <tr>
+                <th>총 객수</th>
+                <th>총 매출액</th>
+            </tr>
+            <tr>
+                <td>1,847</td>
+                <td>20,604,000</td>
+            </tr>
+        </table>
+    </div>
+    <div class="bg">
+        <div>
+
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#datepicker").datepicker();
+
+        });
+    </script>
+</body>
+</html>
