@@ -178,14 +178,15 @@
                 $(".date__value").text(value01);
             })
 
+
             //레이어 팝업창 띄우기 배경스크롤 안되게
-            $(".js_popup").click(function (e) {
+            $(".js_popup").on('click', function (e) {
                 e.preventDefault();
                 $(".popup__wrap").fadeIn();
                 $("body").bind('touchmove', function (e) { e.preventDefault() });
             });
             //레이어 팝업창 띄우기 배경스크롤 안되게
-            $(".popup__btn").click(function (e) {
+            $(".popup__btn").on('click', function (e) {
                 e.preventDefault();
                 $(".popup__wrap").fadeOut();
                 $("body").unbind('touchmove');

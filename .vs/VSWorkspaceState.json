@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\resource",
+    "\\src\\resource\\img",
+    "\\src\\resource\\js",
     "\\src\\views"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\src\\views\\mpos_viewlist.html",
   "PreviewInSolutionExplorer": false
 }
