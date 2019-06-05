@@ -29,8 +29,8 @@
                 <img src="../resource/img/ico_arrow_left.png" />
             </button>
             <div class="date__group">
-                <span class="date__value">2019-05-25</span>
-                <input type="date" class="date__tf" value="2019-05-25" />
+                <span class="date__value"></span>
+                <input type="date" id="currentDate" class="date__tf" />
             </div>
             <button class="date__btnright">
                 <img src="../resource/img/ico_arrow_right.png" />
@@ -45,34 +45,34 @@
                 </colgroup>
                 <thead>
                     <tr>
-                        <th>매장명</th>
-                        <th>객수</th>
-                        <th>매출액</th>
+                        <th class="text_left">매장명</th>
+                        <th class="text_right">객수</th>
+                        <th class="text_right">매출액</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="js_popup">
-                        <td>가나다라마바사아자차카타파하가나다라마바사아자차카타파하</td>
+                        <td><span class="list__txtcrop">가나다라마바사아자차카타파하가나다라마바사아자차카타파하</span></td>
                         <td class="text_right">999,999</td>
                         <td class="text_right">9,999,999,999</td>
                     </tr>
                     <tr class="js_popup">
-                        <td>투게더마트</td>
+                        <td><span class="list__txtcrop">투게더마트</span></td>
                         <td class="text_right">224</td>
                         <td class="text_right">1,087,350</td>
                     </tr>
                     <tr class="js_popup">
-                        <td>투게더마트 계양점</td>
+                        <td><span class="list__txtcrop">투게더마트 계양점</span></td>
                         <td class="text_right">661</td>
                         <td class="text_right">5,587,470</td>
                     </tr>
                     <tr class="js_popup">
-                        <td>투게더마트 구로점</td>
+                        <td><span class="list__txtcrop">투게더마트 구로점</span></td>
                         <td class="text_right">733</td>
                         <td class="text_right">1,087,350</td>
                     </tr>
                     <tr class="js_popup">
-                        <td>투게더마트 신도림점</td>
+                        <td><span class="list__txtcrop">투게더마트 신도림점</span></td>
                         <td class="text_right">229</td>
                         <td class="text_right">6,700,610</td>
                     </tr>
@@ -200,8 +200,21 @@
     </div>
     
     <script>
+        //오늘날짜 가져오기
+        document.getElementById('currentDate').value = new Date().toISOString().substring(0, 10);
+
         $(document).ready(function () {
-            //날짜선택
+            //오늘 날짜 표시
+            var value01 = $(".date__tf").val();
+            $(".date__value").text(value01);
+
+            //이전날짜
+            $(".date__btnleft").click(function () {
+            })
+            //다음날짜
+            $(".date__btnright").click(function () {
+            })
+            //선택 날짜 표시
             $(".date__tf").change(function () {
                 var value01 = $(".date__tf").val();
                 $(".date__value").text(value01);

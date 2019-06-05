@@ -3,8 +3,8 @@
     "",
     "\\src",
     "\\src\\resource",
-    "\\src\\resource\\img",
     "\\src\\resource\\js",
+    "\\src\\resource\\sass",
     "\\src\\views"
   ],
   "SelectedNode": "\\src\\views\\mpos_viewlist.html",

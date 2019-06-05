@@ -5,19 +5,24 @@ html,body{height: 100%;}
 .text_center{text-align: center !important}
 .text_right{text-align: right !important}
 .bg_gray{ background:#eaeaea}
+
 .header{
-    &__wrap{ position: fixed; top:0; right:0; left:0; height: 50px; border-bottom:1px solid #ddd; background: #fff; z-index: 10;}
+    &__wrap{ display:none; position: fixed; top:0; right:0; left:0; height: 50px; border-bottom:1px solid #ddd; background: #fff; z-index: 10;}
     &__btnleft {position: absolute; left:15px;
         > img {display:block; width:18px; margin:16px auto}
     }
     &__tit{ font-size: 18px; font-weight:normal; text-align: center; line-height: 50px;}
 }
+
 .container{
-    &__wrap{display: block; overflow: hidden; margin-top: 50px; padding-bottom: 80px; }
+    &__wrap{display: block; overflow: hidden; padding-bottom: 80px; }
+    &__wrap-full{display: block; overflow: hidden;}
 }
+
 .footer{
     &__wrap{display: block; position: fixed; right:0; bottom:0; left:0; height: auto; background: #ddd;}
 }
+
 .tab{
     &__wrap{display: block; overflow: hidden; margin:0; background: #fff; box-shadow:1px 1px 3px rgba(0,0,0,.175)}
     &__list{display: block; width:100%;
@@ -27,6 +32,7 @@ html,body{height: 100%;}
         }
     }
 }
+
 .date{
     &__wrap{position: relative; overflow: hidden; height:40px; margin:5px 10px; padding: 5px 10px; border:1px solid rgba(0,0,0,.4); border-top:none; border-left: none; border-radius: 5px; background: #fff; box-shadow:0 0 3px rgba(0,0,0,.175)}
     &__btnleft{position: absolute; top:0; bottom:0; left:0; width:30px;
@@ -39,21 +45,53 @@ html,body{height: 100%;}
     &__value { display:block; font-size:20px;  text-align: center}
     &__tf{opacity: 0; display: block; position: absolute; top:0; bottom:0; width:200px; margin: 0 auto; font-size: 18px; text-align: center; outline: none; border:none }
 }
+
+.user{
+    &__wrap{display: block; margin: 5px 10px; border:1px solid rgba(0,0,0,.3); border-radius: 5px; background: #fff; box-shadow:1px 1px 3px rgba(0,0,0,.175)}
+    &__tbl{width:100%; border-spacing: 0; border-collapse: collapse;
+        > tbody > tr > td { position:relative; padding: 5px 4px; font-size: 16px; line-height: 1.2; letter-spacing:-0.5px; word-break:keep-all }
+    }
+    &__txtcrop{display:inline-block; overflow:hidden; position:absolute; left:0; right:0; top:50%; margin-top:-8px; padding:0 4px; line-height:16px; text-overflow:ellipsis; white-space:nowrap; word-break:break-all}
+}
+
+.search{
+    &__wrap{position: relative; overflow: hidden; margin:5px 10px;}
+    &__list{
+        > li{ float:left; padding-left:4px;
+              &:first-child {padding-left:0; width:20%}
+              &:nth-child(2){width:25%}
+              &:nth-child(3){width:25%}
+              &:nth-child(4){width:30%}
+        }
+    }
+    &__opt {display:inline-block; width:100%; padding:8px 3px ; border:1px solid #ccc; font-weight:bolder; background-color:#fff; letter-spacing:-0.5px; vertical-align:inherit}
+}
+
 .list{
-    &__wrap{display: block; min-height: 500px; margin: 5px 10px; border:1px solid rgba(0,0,0,.3); border-radius: 5px; background: #fff; box-shadow:1px 1px 3px rgba(0,0,0,.175)}
-    &__tbl{width:100%;  border-spacing: 0; border-collapse: collapse;
-        > thead > tr > th { padding: 4px; font-size: 16px; font-weight: normal; color:#666}
-        > tbody > tr > td { padding: 15px 4px; font-size: 16px; line-height: 1.2}
+    &__wrap{display: block; overflow:hidden; min-height: 500px; margin: 5px 10px; border:1px solid rgba(0,0,0,.3); border-radius: 5px; background: #fff; box-shadow:1px 1px 3px rgba(0,0,0,.175)}
+    &__tbl{width:100%; border-spacing: 0; border-collapse: collapse;
+        > thead > tr > th { padding: 4px; font-size: 14px; font-weight: normal; color:#666}
+        > tbody > tr > td { position:relative; padding: 15px 4px; font-size: 16px; line-height: 1.2; letter-spacing:-0.5px; word-break:keep-all }
         > tbody > tr:nth-of-type(odd) {background-color:#f0f0f0;}
         > tbody > tr:first-child > td { border-top:1px solid #999;}
+        &--line {
+            > thead > tr > th {background:#fff}
+            > tbody > tr > td {padding:5px 4px; border-bottom:1px solid #ddd}
+            > tbody > tr:nth-of-type(odd) {background-color:transparent;}
+        }
+    }
+    &__txtcrop{display:inline-block; overflow:hidden; position:absolute; left:0; right:0; top:50%; margin-top:-8px; padding:0 4px; line-height:16px; text-overflow:ellipsis; white-space:nowrap; word-break:break-all;
+        &--row2{margin-top:-16px;}
     }
 }
+
 .sum{
     &__tbl{ margin-top: auto; width:100%;
         > thead > tr > th{ padding: 8px 5px; font-size: 16px; font-weight: normal; background: #0060ff; color:#fff;}
         > tbody > tr > td{ padding: 8px 4px; font-size:16px;  font-weight: bolder; background: #fafafa; text-align: center}
     }
 }
+
 .popup{
     &__wrap{position:fixed;top:0;right:0;bottom:0;left:0; background:rgba(0,0,0,0.5); z-index:100}
     &__box {position:absolute; top:50%; right:15px; left:15px; height:400px; margin-top:-200px; padding: 15px 10px; border-radius: 5px; background:#fff}

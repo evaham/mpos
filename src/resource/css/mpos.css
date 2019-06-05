@@ -11,7 +11,7 @@ html, body { height: 100%; }
 
 .bg_gray { background: #eaeaea; }
 
-.header__wrap { position: fixed; top: 0; right: 0; left: 0; height: 50px; border-bottom: 1px solid #ddd; background: #fff; z-index: 10; }
+.header__wrap { display: none; position: fixed; top: 0; right: 0; left: 0; height: 50px; border-bottom: 1px solid #ddd; background: #fff; z-index: 10; }
 
 .header__btnleft { position: absolute; left: 15px; }
 
@@ -19,7 +19,9 @@ html, body { height: 100%; }
 
 .header__tit { font-size: 18px; font-weight: normal; text-align: center; line-height: 50px; }
 
-.container__wrap { display: block; overflow: hidden; margin-top: 50px; padding-bottom: 80px; }
+.container__wrap { display: block; overflow: hidden; padding-bottom: 80px; }
+
+.container__wrap-full { display: block; overflow: hidden; }
 
 .footer__wrap { display: block; position: fixed; right: 0; bottom: 0; left: 0; height: auto; background: #ddd; }
 
@@ -49,17 +51,49 @@ html, body { height: 100%; }
 
 .date__tf { opacity: 0; display: block; position: absolute; top: 0; bottom: 0; width: 200px; margin: 0 auto; font-size: 18px; text-align: center; outline: none; border: none; }
 
-.list__wrap { display: block; min-height: 500px; margin: 5px 10px; border: 1px solid rgba(0, 0, 0, 0.3); border-radius: 5px; background: #fff; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.175); }
+.user__wrap { display: block; margin: 5px 10px; border: 1px solid rgba(0, 0, 0, 0.3); border-radius: 5px; background: #fff; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.175); }
+
+.user__tbl { width: 100%; border-spacing: 0; border-collapse: collapse; }
+
+.user__tbl > tbody > tr > td { position: relative; padding: 5px 4px; font-size: 16px; line-height: 1.2; letter-spacing: -0.5px; word-break: keep-all; }
+
+.user__txtcrop { display: inline-block; overflow: hidden; position: absolute; left: 0; right: 0; top: 50%; margin-top: -8px; padding: 0 4px; line-height: 16px; text-overflow: ellipsis; white-space: nowrap; word-break: break-all; }
+
+.search__wrap { position: relative; overflow: hidden; margin: 5px 10px; }
+
+.search__list > li { float: left; padding-left: 4px; }
+
+.search__list > li:first-child { padding-left: 0; width: 20%; }
+
+.search__list > li:nth-child(2) { width: 25%; }
+
+.search__list > li:nth-child(3) { width: 25%; }
+
+.search__list > li:nth-child(4) { width: 30%; }
+
+.search__opt { display: inline-block; width: 100%; padding: 8px 3px; border: 1px solid #ccc; font-weight: bolder; background-color: #fff; letter-spacing: -0.5px; vertical-align: inherit; }
+
+.list__wrap { display: block; overflow: hidden; min-height: 500px; margin: 5px 10px; border: 1px solid rgba(0, 0, 0, 0.3); border-radius: 5px; background: #fff; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.175); }
 
 .list__tbl { width: 100%; border-spacing: 0; border-collapse: collapse; }
 
-.list__tbl > thead > tr > th { padding: 4px; font-size: 16px; font-weight: normal; color: #666; }
+.list__tbl > thead > tr > th { padding: 4px; font-size: 14px; font-weight: normal; color: #666; }
 
-.list__tbl > tbody > tr > td { padding: 15px 4px; font-size: 16px; line-height: 1.2; }
+.list__tbl > tbody > tr > td { position: relative; padding: 15px 4px; font-size: 16px; line-height: 1.2; letter-spacing: -0.5px; word-break: keep-all; }
 
 .list__tbl > tbody > tr:nth-of-type(odd) { background-color: #f0f0f0; }
 
 .list__tbl > tbody > tr:first-child > td { border-top: 1px solid #999; }
+
+.list__tbl--line > thead > tr > th { background: #fff; }
+
+.list__tbl--line > tbody > tr > td { padding: 5px 4px; border-bottom: 1px solid #ddd; }
+
+.list__tbl--line > tbody > tr:nth-of-type(odd) { background-color: transparent; }
+
+.list__txtcrop { display: inline-block; overflow: hidden; position: absolute; left: 0; right: 0; top: 50%; margin-top: -8px; padding: 0 4px; line-height: 16px; text-overflow: ellipsis; white-space: nowrap; word-break: break-all; }
+
+.list__txtcrop--row2 { margin-top: -16px; }
 
 .sum__tbl { margin-top: auto; width: 100%; }
 
