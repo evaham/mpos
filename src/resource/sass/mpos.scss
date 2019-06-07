@@ -23,6 +23,7 @@ html,body{height: 100%;}
     &__wrap{display: block; position: fixed; right:0; bottom:0; left:0; height: auto; background: #ddd;}
 }
 
+
 .tab{
     &__wrap{display: block; overflow: hidden; margin:0; background: #fff; box-shadow:1px 1px 3px rgba(0,0,0,.175)}
     &__list{display: block; width:100%;
@@ -32,7 +33,6 @@ html,body{height: 100%;}
         }
     }
 }
-
 .date{
     &__wrap{position: relative; overflow: hidden; height:40px; margin:5px 10px; padding: 5px 10px; border:1px solid rgba(0,0,0,.4); border-top:none; border-left: none; border-radius: 5px; background: #fff; box-shadow:0 0 3px rgba(0,0,0,.175)}
     &__btnleft{position: absolute; top:0; bottom:0; left:0; width:30px;
@@ -45,15 +45,6 @@ html,body{height: 100%;}
     &__value { display:block; font-size:20px;  text-align: center}
     &__tf{opacity: 0; display: block; position: absolute; top:0; bottom:0; width:200px; margin: 0 auto; font-size: 18px; text-align: center; outline: none; border:none }
 }
-
-.user{
-    &__wrap{display: block; margin: 5px 10px; border:1px solid rgba(0,0,0,.3); border-radius: 5px; background: #fff; box-shadow:1px 1px 3px rgba(0,0,0,.175)}
-    &__tbl{width:100%; border-spacing: 0; border-collapse: collapse;
-        > tbody > tr > td { position:relative; padding: 5px 4px; font-size: 16px; line-height: 1.2; letter-spacing:-0.5px; word-break:keep-all }
-    }
-    &__txtcrop{display:inline-block; overflow:hidden; position:absolute; left:0; right:0; top:50%; margin-top:-8px; padding:0 4px; line-height:16px; text-overflow:ellipsis; white-space:nowrap; word-break:break-all}
-}
-
 .search{
     &__wrap{position: relative; overflow: hidden; margin:5px 10px;}
     &__list{
@@ -66,7 +57,6 @@ html,body{height: 100%;}
     }
     &__opt {display:inline-block; width:100%; padding:8px 3px ; border:1px solid #ccc; font-weight:bolder; background-color:#fff; letter-spacing:-0.5px; vertical-align:inherit}
 }
-
 .list{
     &__wrap{display: block; overflow:hidden; min-height: 500px; margin: 5px 10px; border:1px solid rgba(0,0,0,.3); border-radius: 5px; background: #fff; box-shadow:1px 1px 3px rgba(0,0,0,.175)}
     &__tbl{width:100%; border-spacing: 0; border-collapse: collapse;
@@ -84,6 +74,24 @@ html,body{height: 100%;}
         &--row2{margin-top:-16px;}
     }
 }
+
+.userinfo{
+    &__wrap{display: block; margin: 5px 10px; border:1px solid rgba(0,0,0,.3); border-radius: 5px; background: #fff; box-shadow:1px 1px 3px rgba(0,0,0,.175)}
+    &__tbl{width:100%; border-spacing: 0; border-collapse: collapse;
+        > tbody > tr > td { position:relative; padding: 5px 4px; font-size: 16px; line-height: 1.2; letter-spacing:-0.5px; word-break:keep-all }
+    }
+    &__txtcrop{display:inline-block; overflow:hidden; position:absolute; left:0; right:0; top:50%; margin-top:-8px; padding:0 4px; line-height:16px; text-overflow:ellipsis; white-space:nowrap; word-break:break-all}
+}
+
+.pagehead{
+    &__wrap{display: block; overflow: hidden; margin:0; padding:10px; background: #fff; box-shadow:1px 1px 3px rgba(0,0,0,.175)}
+    &__tit{ font-size:17px; font-weight:bolder; color:#3768c5; text-align:center; letter-spacing:-0.5px}
+    &__date{ font-size:14px; color:#999;}
+}
+.pagecont{
+    &__wrap{display: block; overflow:hidden; min-height: 500px; margin: 5px 10px; padding:4px 4px 50px; border:1px solid rgba(0,0,0,.3); border-radius: 5px; font-size:16px; background: #fff; box-shadow:1px 1px 3px rgba(0,0,0,.175)}
+}
+
 
 .sum{
     &__tbl{ margin-top: auto; width:100%;

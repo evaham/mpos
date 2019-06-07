@@ -3,10 +3,11 @@
     "",
     "\\src",
     "\\src\\resource",
+    "\\src\\resource\\css",
     "\\src\\resource\\js",
     "\\src\\resource\\sass",
     "\\src\\views"
   ],
-  "SelectedNode": "\\src\\views\\mpos_viewlist.html",
+  "SelectedNode": "\\src\\resource\\css\\mpos.css",
   "PreviewInSolutionExplorer": false
 }
