@@ -4,10 +4,11 @@
     "\\src",
     "\\src\\resource",
     "\\src\\resource\\css",
+    "\\src\\resource\\img",
     "\\src\\resource\\js",
     "\\src\\resource\\sass",
     "\\src\\views"
   ],
-  "SelectedNode": "\\src\\resource\\css\\mpos.css",
+  "SelectedNode": "\\src\\resource",
   "PreviewInSolutionExplorer": false
 }
