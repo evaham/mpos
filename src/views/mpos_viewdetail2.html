@@ -8,77 +8,96 @@
     <link rel="stylesheet" href="../resource/css/reset.css" />
     <link rel="stylesheet" href="../resource/css/mpos.css?11223112" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
     <div class="container__wrap" style="padding-bottom:0">
         <div class="pagehead__wrap">
             <p class="pagehead__tit text_left">상담접수 글 보기</p>
-            <input type="button" class="pagehead__btn pagehead__btn--right" value="수정" />
+            <input type="button" class="pagehead__btn" value="수정" />
         </div>
         <div class="cont__wrap">
-            <p class="cont__tit">포스에서 등록하는 방법을 알고 싶어요</p>
-
-            <table class="cont__tbl">
-                <tbody>
-                    <tr>
-                        <th>작성자</th>
-                        <td>
-                            <span class="cont__txt text_red">알파마트</span>
-                            <span class="cont__txt text_blue">관리자</span>
-                            <span class="cont__txt">(010-0000-0000)</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>유형/상태</th>
-                        <td>
-                            <span class="cont__txt text_gray">사용법문의</span> /
-                            <span class="cont__txt text_red">미처리</span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
+            <p class="cont__tit">MGR과 비교했을때 매출액이 다르게 보여져요 왜그렇죠? </p>
             <div>
-
+                <span class="cont__txtsmall text_gray">두개더 알파베타마트(대포동점)</span>
+                <span class="cont__txtsmall text_gray">최고위치관리자</span>
+                <span class="cont__txtsmall text_gray">19.11.13</span>
             </div>
-            <span class="cont__txt text_gray">2019-11-13 16:36</span>
+            <p class="cont__txt text_red">답변대기중</p>
+            <hr class="cont__hr" />
 
-
-
-        </div>
-
-
-
-        <div class="pagebody__wrap">
-            <div class="pagebody__cont">
-                <div class="inbox__group">
-                    
-                </div>
-                <hr class="pagebody__hr" />
-                <div class="pagebody__txtgroup">정성스럽게만든 매장의전단과<br />이제 투게더문자에 손쉽게 담아서보낼 수 있습니다.</div>
-                <ul class="pagebody__list">
+            <p class="cont__txt">
+                엠포스에서 매출을 데이터를 보는데 MGR의 데이터와 다르게 보여집니다.<br />
+                캡쳐 이미지를 첨부했으니 확인부탁바랍니다.
+                확인해서 연락을 주셨으면 합니다.
+            </p>
+            <div class="file__wrap">
+                <p class="file__tit">첨부사진</p>
+                <ul class="file__list">
                     <li>
-                        <div class="linkbox__wrap">
-                            <span class="linkbox__tit">image_20181011_1image_20181011_1image_20181011_1</span>
-                            <span class="linkbox__txt">54kb</span>
-                            <span class="linkbox__btn">삭제</span>
-                        </div>
+                        <a href="#"><span>image_20191011_1image.jpg</span><span>54kb</span></a><button class="file__btn">삭제</button>
+                    </li>
+                    <li>
+                        <a href="#"><span>image_20191011_1image.jpg</span><span>54kb</span></a><button class="file__btn">삭제</button>
                     </li>
                 </ul>
             </div>
-            <div class="pagebody__cont">
-                <div class="inbox__group">
-                    <span class="text_blue">2018-09-20 16:32</span>
-                    <p class="">안녕하세요~ 고객님 월요일 오후 6시경 매장으로 연락드리겠습니다.</p>
-                </div>
-            </div>
-            <div class="pagebody__cont">
-                <div class="inbox__group">
-                    <span class="text_blue">2018-09-20 16:32</span>
-                    <p class="">안녕하세요~ 고객님 월요일 오후 6시경 매장으로 연락드리겠습니다.</p>
-                </div>
-            </div>
         </div>
+
+        <div class="answer__wrap">
+            <table>
+                <colgroup>
+                    <col style="width:22px;" />
+                    <col style="width:auto" />
+                </colgroup>
+                <tr>
+                    <td rowspan="2" style="vertical-align:top">
+                        <i class="material-icons text_blue" style="font-size:20px;">subdirectory_arrow_right</i>
+                    </td>
+                    <td>
+                        <span class="answer__txtsmall text_blue">투게더스</span>
+                        <span class="answer__txtsmall text_gray">19.05.31</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="answer__txt">
+                            안녕하세요. 고객님<br />
+                            현재 문의주신 내용을 담당자와 함께 확인하고 있으며 곧 연락 드리겠습니다.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="answer__wrap">
+            <table>
+                <colgroup>
+                    <col style="width:22px;" />
+                    <col style="width:auto" />
+                </colgroup>
+                <tr>
+                    <td rowspan="2" style="vertical-align:top">
+                        <i class="material-icons text_blue" style="font-size:20px;">subdirectory_arrow_right</i>
+                    </td>
+                    <td>
+                        <span class="answer__txtsmall text_blue">투게더스</span>
+                        <span class="answer__txtsmall text_gray">19.05.31</span>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="answer__txt">
+                            안녕하세요. 고객님<br />
+                            문의 주신 내용으로 연락을 드렸으나 연결이 되지 않아서 답변을 남겨드립니다. 매장의 MGR과의 통신이 원할하지 않아 MPOS와 데이터가 다르게 보여지는 것으로 보인것으로 확인되었습니다. 매장에 인터넷 연결을 확인해 주시기 바랍니다.<br /> 혹시 추가 문의가 있으실 경우에는 1577-4550으로 연락을 주시거나 새로 질문을 해주시기 바랍니다.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
     </div>
 </body>
 </html>
