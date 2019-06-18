@@ -4,23 +4,43 @@ html,body{height: 100%;}
 .text_left{text-align: left !important}
 .text_center{text-align: center !important}
 .text_right{text-align: right !important}
-.bg_gray{ background:#eaeaea}
-.text_gray{color:#808080 !important}
-.text_lightgray{color:#ddd !important}
-.text_blue{color:#0a7bf1 !important}
-.text_red{color:#be1b1c !important}
-.text_green{color:#40c057 !important}
 
+.bg_gray{ background:#eaeaea}
+/** 전역 택스트 색상 **/
+/** 색상값은 기본 **/
+.text_gray{color:#adb5bd !important}
+.text_gray2{color:#868e96 !important}
+.text_gray3{color:#495057 !important}
+.text_gray4{color:#343a40 !important}
+.text_blue{color:#339af0 !important}
+.text_blue2{color:#228be6 !important}
+.text_blue3{color:#1c7ed6 !important}
+.text_blue4{color:#1971c2 !important}
+.text_red{color:#ff6b6b !important}
+.text_red2{color:#fa5252 !important}
+.text_red3{color:#f03e3e !important}
+.text_red4{color:#e03131 !important}
+.text_green{color:#51cf66 !important}
+.text_green2{color:#40c057 !important}
+.text_green3{color:#37b24d !important}
+.text_green4{color:#2f9e44 !important}
+.text_bold{font-weight:bolder !important}
+
+
+
+
+
+
+/** UI확인용 헤더 실제적용시 사용하지 않음 **/
 .header{
-    &__wrap{ display:none; position: fixed; top:0; right:0; left:0; height: 50px; border-bottom:1px solid #ddd; background: #fff; z-index: 10;}
-    &__btnleft {position: absolute; left:15px;
-        > img {display:block; width:18px; margin:16px auto}
-    }
-    &__tit{ font-size: 18px; font-weight:normal; text-align: center; line-height: 50px;}
+    &__wrap{ display:block; position: fixed; top:0; right:0; left:0; height: 50px; border-bottom:1px solid #ddd; background:url(../img/bg_top.png); z-index: 10;}
+    &__btnleft {position: absolute; top:12px; left:15px; color:#fff}
+    &__tit{ font-size: 18px; font-weight:normal; color:#fff; text-align: center; line-height: 50px;}
 }
 
+/** header를 사용 시 참고하기위해 margin-top:50을사용 추후 제거 **/
 .container{
-    &__wrap{display: block; overflow: hidden; padding-bottom: 80px; }
+    &__wrap{display: block; overflow: hidden; padding-bottom: 80px; margin-top:50px; }
     &__wrap-full{display: block; overflow: hidden;}
 }
 
@@ -91,6 +111,9 @@ html,body{height: 100%;}
     }
     &__img {display:inline-block; vertical-align:top}
     &__icoplay{display:inline-block; width:25px; height:25px; background:url(../img/ico_play.png) 0 0 no-repeat; background-size:100%; opacity:0.5}
+    &__btnmore{display:block; width:150px; margin:10px auto; padding:5px; border-radius:3px; background:#0094ff; color:#fff; text-align:center;
+        > .material-icons {margin-right:5px; font-size:20px; vertical-align:top}
+    }
 }
 
 /** 사용자정보 **/
@@ -140,16 +163,14 @@ html,body{height: 100%;}
         > li {display:inline-block; padding:5px;}
     }
     &__tit {}
-    &__txt {}
-    &__txtsmall { display:inline-block; margin-top:3px; font-size:13px; font-weight:normal; color:#666; line-height:1.2; vertical-align:top;}
+    &__txt {margin-right:5px; color:#3a65ff; text-decoration:underline}
+    &__txtsmall { display:inline-block; margin-top:3px; font-size:13px; font-weight:normal; color:#999; line-height:1.2; vertical-align:top;}
     &__btn {}
 }
 .answer{
-    &__wrap{display: block; overflow:hidden; padding:15px; background: #fff;}
-    &__tit {}
+    &__wrap{display: block; overflow:hidden; padding:15px; border-bottom:1px solid #ddd; background: #fff;}
     &__txt {}
-    &__txtsmall { display:inline-block; margin-top:3px; font-size:13px; font-weight:normal; color:#666; line-height:1.2; vertical-align:top;}
-    &__btn {}
+    &__txtsmall { display:inline-block; margin-top:3px; font-size:13px; color:#666; line-height:1.2; vertical-align:top;}
 }
 
 

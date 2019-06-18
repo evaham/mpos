@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="../resource/css/reset.css" />
     <link rel="stylesheet" href="../resource/css/mpos.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body class="bg_gray">
     <div class="header__wrap">
         <button class="header__btnleft">
-            <img src="../resource/img/ico_arrow_top.png" />
+            <i class="material-icons">arrow_back</i>
         </button>
         <p class="header__tit">본부 매출조회</p>
     </div>
     <div class="container__wrap">
         <div class="tab__wrap">
             <ul class="tab__list">
-                <li class="select">매장별</li>
+                <li class="select">전체매출</li>
                 <li>시간대별</li>
                 <li>분류별</li>
             </ul>
@@ -41,18 +43,18 @@
                 <colgroup>
                     <col style="width:auto" />
                     <col style="width:70px;" />
-                    <col style="width:120px;" />
+                    <col style="width:120px; background:rgba(255, 0, 0,0.05) !important" />
                 </colgroup>
                 <thead>
                     <tr>
-                        <th class="text_left">매장명</th>
-                        <th class="text_right">객수</th>
-                        <th class="text_right">매출액</th>
+                        <th class="text_left text_gray2">매장명</th>
+                        <th class="text_right text_gray2">객수</th>
+                        <th class="text_right text_gray2">매출액</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="js_popup">
-                        <td><span class="list__txtcrop">가나다라마바사아자차카타파하가나다라마바사아자차카타파하</span></td>
+                        <td><span class="list__txtcrop text_gray3">가나다라마바사아자차카타파하가나다라마바사아자차카타파하</span></td>
                         <td class="text_right">999,999</td>
                         <td class="text_right">9,999,999,999</td>
                     </tr>
